@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio2</title>
+
+    <style>
+        img{
+            width: 30%;
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="images.jpeg">
+
+    <div id="data">
+
+    </div>
+
+    <table>
+        <h3>La mia tabella</h3>
+
+        <tr>
+            <th>Colonna1</th>
+            <th>Colonna2</th>
+            <th>Colonna3</th>
+        </tr>
+
+        <tr>
+            <td>Valore1</td>
+            <td>Valore2</td>
+            <td>Valore3</td>
+        </tr>
+
+        <tr></tr>
+            <td>Valore4</td>
+            <td>Valore5</td>
+            <td>Valore6</td>
+        </tr>
+
+    </table>
+
+    <h2>INPUT</h2>
+    <input type="text"><br>
+    <input type="number"><br>
+    <input type="submit" value="CLICCAMI"><br>
+    <input type="password"><br>
+    <button>BOTTONE</button>
+
+    <script>
+        var data=new Date();
+        document.getElementById('data').innerHTML=giorni(data.getDay())+' '+data.getDate()+ '/' +data.getMonth()+'/'+data.getFullYear();
+
+
+        function giorni(day){
+        
+            switch (day){
+                case 0: 
+                    giorno='Domenica';
+                    break;
+                case 1:
+                    giorno='Lunedì';
+                    break;
+                case 2:
+                    giorno='Martedì';
+                    break;
+                case 3: 
+                    giorno='Mercoledì';
+                    break;
+                case 4:
+                    giorno='Giovedì';
+                    break;
+                case 5:
+                    giorno='Venerdì';
+                    break;
+                case 6: 
+                    giorno='Sabato';
+                    break;
+            }
+            return giorno;
+        }
+    </script>
+</body>
+</html>
